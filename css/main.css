@@ -1,0 +1,226 @@
+@charset "utf-8";
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+ul,li,ol{list-style: none;}
+
+a{text-decoration: none; color: inherit;}
+
+body{
+    background-color: #f2f2f2; color: #333;
+    font-family: Arial, "고딕" , Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#wrap{
+    width: 1200px; 
+    /* height: 700px; */
+    margin: 0 auto; 
+    background: white;
+    position: relative;
+}
+
+/* header 영역 */
+
+#header{
+    height: 100px;
+    background-color: lightblue;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    /* border: #333 1px solid; */
+    padding-top: 30px; 
+    /* (100-40 / 2 = 30) */
+}
+
+.logo a{}
+.logo a img{
+    /* 200*40 */
+}
+
+.nav{
+    float: right;
+    /* width: 1000px; */
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.main{}
+
+.main > li{
+    float: left;
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff5050;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold; font-size: 20px;
+    color: #ffc000;
+}
+
+.main > li:hover > a{
+    background-color: #5b9bd5;
+}
+
+.sub{
+    position: absolute;
+    left: 0; top: 50px;
+    width: 100%;
+    z-index: 20;
+    display: none;
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    text-align: center;
+    height: 40px; line-height: 40px;
+    font-size: 16px; font-weight: 800;
+    background-color: lemonchiffon;
+}
+
+.sub li a:hover{background-color: #ffc000;}
+
+.sub_bg{
+    width: 1200px;
+    height: 140px;
+    position: absolute;
+    top: 100px; left: 0;
+    background-color: lemonchiffon;
+    z-index: 10;
+    display: none;
+}
+
+
+/* container 영역 */
+#container{
+    height: 500px;
+    /* background-color: silver; */
+}
+
+/* fade view 영역 */
+.view{
+    height: 300px;
+}
+
+.fade{
+    height: 300px;
+    position: relative;
+}
+
+.fade li{
+    width: 100%; 
+    height: 300px;
+    position: absolute;
+}
+
+
+/* contents 영역 */
+.contents{}
+.contents > div{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.contents h2{
+    width: 100px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #ffc000;
+    border-radius: 10px 10px 0 0;
+}
+
+.contents ul{
+    width: 100%;
+    height: 165px;
+    background-color: #ffc000;
+    border-radius: 0 10px 10px;
+    padding: 10px 10px;
+}
+
+.notice{}
+.notice ul{}
+.notice ul li{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dotted gray;
+}
+
+.notice ul li a{
+    float: left;
+    width: 75%;
+    /* border: 1px solid blue; */
+
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.notice ul li span{
+    float: right;
+}
+
+.gallery{}
+.gallery ul{}
+.gallery ul li{
+    display: inline-block;
+}
+.gallery ul li a{}
+.gallery ul li a img{
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.gallery ul li a img:hover{
+    opacity: 1;
+}
+
+.baro{}
+
+.baro p{
+    height: 165px;
+    background-color: #ffc000;
+    padding: 4px 0 ;
+}
+
+.baro p a{}
+
+.baro p a img{
+    /* 400*156 */
+}
+
+
+
+
+
+
+
+/* footer 영역 */
+#footer{
+    height: 100px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
